@@ -13,6 +13,9 @@ section {
 .taxes {
   background-color: rgb(204, 71, 101);
 }
+.googlemaps {
+  background-color: rgb(178, 75, 243);
+}
 li {
   font-family: Arial, Helvetica, sans-serif;
 }

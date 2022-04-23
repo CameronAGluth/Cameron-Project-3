@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Google Maps</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="intial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="googlemaps">
+  <nav>
+    <h3>Links</h3>
+    <ul class="links">
+      <li><a type="text/css" href="./index.html">Home</a></li>
+      <li><a type="text/css" href="./cameronjobsummary.html">Job summary</a></li>
+      <li><a type="text/css" href="./taxes.html">Information on taxation</a></li>
+      <li><a type="text/css" href="./googlemaps.html">Map of the World</a></li>
+    </ul>
+  </nav>
+  <div id="map"></div>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
+    async defer></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script async type="text/javascript" src="iitbasicmap.js"></script>
+</body>
+</html>
