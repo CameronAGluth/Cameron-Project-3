@@ -21,6 +21,8 @@ li {
 }
 p {
   font-family: cursive;
+  max-width: 40em;
+  margin: auto;
 }
 .links {
   list-style: none;
@@ -38,11 +40,12 @@ nav {
   padding: 1em;
 }
 body{
-  margin: 0em;
+  margin: 1em;
 }
 .alignedlist {
   list-style: none;
   text-align: left;
+  max-width: 20em;
   margin: auto;
   width: 59%
 }
@@ -54,4 +57,7 @@ body{
 }
 iframe{
   margin: 1em;
+  max-width: 38.2142857144em;
+  width: 90%;
+  height: 30em;
 }
