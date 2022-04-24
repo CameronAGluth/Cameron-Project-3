@@ -61,3 +61,9 @@ iframe{
   width: 90%;
   height: 30em;
 }
+img{
+  max-width: 45em;
+  width: 90%;
+  max-height: 30em;
+  height: 60%;
+}
