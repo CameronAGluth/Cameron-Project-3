@@ -6,16 +6,24 @@ function init(){
     zoom: 18,
     mapTypeId: google.maps.ControlPosition.BOTTOM_CENTER
     }
+
+
+    var myMap = new google.maps.Map(el, mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myLocation,
+      map: myMap,
+      animation: google.maps.Animation.BOUNCE,
+      icon: 'iit-icon.png'
+    });
+
+
+    alert("IT WORKS!");
   };
 
-  var myMap = new google.maps.Map(el, mapOptions);
+  google.maps.event.addDomListener (window, 'load', init);
 
-  var marker = new google.maps.Marker({
-    position: myLocation,
-    map: myMap,
-    animation: google.maps.Animation.BOUNCE,
-    icon: 'iit-icon.png'
-  });
+
   // if (input_text.value == "") {
   //     alert("Please enter an entity.");
   //     return false;
