@@ -25,9 +25,18 @@ p {
   margin: auto;
 }
 .links {
-  list-style: none;
+  background-color: lightgreen;
+  list-style-type: none;
   margin: 0em;
   padding: 0em;
+  overflow: hidden;
+}
+.navListElement {
+  float: left;
+  padding: 1em;
+}
+.navListElement a {
+  text-decoration: none;
 }
 a[type="text/css"] {
   text-decoration: none;

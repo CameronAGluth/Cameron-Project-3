@@ -1,27 +1,39 @@
-function init(){
-  var el entryinput = document.getElementById("canvas");
-  var myLocation = new google.maps.LatLng(41.835117, -87.627130);
-  var mapOptions = {
-    center: myLocation,
-    zoom: 18,
-    mapTypeId: google.maps.ControlPosition.BOTTOM_CENTER
-    }
+// function init() {
+//     'use strict';
+    /*jslint browser:true */
+    // let map;
 
+function initMap() {
+  var map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
 
-    var myMap = new google.maps.Map(el, mapOptions);
-
-    var marker = new google.maps.Marker({
-      position: myLocation,
-      map: myMap,
-      animation: google.maps.Animation.BOUNCE,
-      icon: 'iit-icon.png'
-    });
-
-
-    alert("IT WORKS!");
-  };
-
-  google.maps.event.addDomListener (window, 'load', init);
+window.initMap = initMap;
+//     var entryinput = document.getElementById("canvas"),
+//         myLocation = new google.maps.LatLng(41.835117, -87.627130),
+//         mapOptions = {
+//             center: myLocation,
+//             zoom: 18,
+//             mapTypeId: google.maps.ControlPosition.BOTTOM_CENTER
+//         },
+//
+//
+//         myMap = new google.maps.Map(el, mapOptions),
+//
+//         marker = new google.maps.Marker({
+//             position: myLocation,
+//             map: myMap,
+//             animation: google.maps.Animation.BOUNCE,
+//             icon: 'iit-icon.png'
+//         });
+//
+//
+//     alert("IT WORKS!");
+// }
+//
+// google.maps.event.addDomListener(window, 'load', init);
 
 
   // if (input_text.value == "") {
@@ -30,7 +42,7 @@ function init(){
   // }
   // alert("Hello " + entryinput + "!");
   // return true
-}
+
 //add your JavaScript between these two lines of code
 
 
@@ -40,4 +52,4 @@ function init(){
 
 
 
-window.addEventListener('load', init);
+// window.addEventListener('load', init);
