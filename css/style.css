@@ -49,10 +49,7 @@ p {
   float: left;
   padding: 1em;
 }
-.navListElement a {
-  text-decoration: none;
-}
-a[type="text/css"] {
+a {
   text-decoration: none;
 }
 nav {
@@ -89,4 +86,7 @@ img{
   width: 90%;
   max-height: 30em;
   height: 60%;
+}
+#map {
+  height: 100%;
 }
