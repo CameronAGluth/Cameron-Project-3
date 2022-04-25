@@ -1,3 +1,17 @@
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+margin: 0;
+}
+
 section {
   margin: auto;
   text-align: center;
@@ -76,17 +90,3 @@ img{
   max-height: 30em;
   height: 60%;
 }
-
-/* Remove default margin */
-/* body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-} */
